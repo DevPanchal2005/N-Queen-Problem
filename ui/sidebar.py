@@ -147,17 +147,18 @@ def render_sidebar():
             placeholders['depth'] = st.empty()
             placeholders['depth'].metric("Maximum Depth", st.session_state.get('metric_depth', 0))
             
-            placeholders['time'] = st.empty()
-            total_time = st.session_state.get('total_elapsed_time', 0.0)
-            placeholders['time'].metric("Visualization Time", f"{total_time:.2f} s")
-            
         with result_col2:
             placeholders['backtracks'] = st.empty()
             placeholders['backtracks'].metric("Backtracks", st.session_state.get('metric_backtracks', 0))
             
             placeholders['solutions'] = st.empty()
             placeholders['solutions'].metric("Solutions Found", st.session_state.get('metric_solutions', 0))
-            
+
+
+        placeholders['time'] = st.empty()
+        total_time = st.session_state.get('total_elapsed_time', 0.0)
+        placeholders['time'].metric("Visualization Time", f"{total_time:.2f} s")
+
         # Format: ns, µs, ms, s
         def format_compute_time(t):
             if t < 1e-6:

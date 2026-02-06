@@ -14,4 +14,4 @@ primaryColor = "#769656"   # chess.com board dark square
 textColor = "#e6e6e6"
 
 # Font
-font = "Inter"
+font = "'Space Grotesk':https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap"
