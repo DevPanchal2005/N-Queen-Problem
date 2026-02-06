@@ -1,0 +1,8 @@
+[theme]
+base = "dark"
+
+primaryColor = "#B87333"            # muted bronze / warm iron
+backgroundColor = "#171717"         # warm charcoal
+secondaryBackgroundColor = "#0F0F0F"
+textColor = "#EDEDED"
+font = "sans serif"
