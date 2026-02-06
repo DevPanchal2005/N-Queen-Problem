@@ -29,6 +29,14 @@ def init_session_state():
 def render_layout():
     init_session_state()
     
+    st.set_page_config(
+        page_title="N-Queen Visualizer",
+        page_icon="https://img.icons8.com/?size=100&id=C5LTcmsc3cr0&format=png&color=000000",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
+
+    st.title("N-Queen Visualizer")
 
     # 1. Sidebar (Configuration)
     n, delay, metric_placeholders = render_sidebar()
@@ -126,7 +134,7 @@ def render_layout():
         # Show final state and all solutions
         
         with placeholder_board.container():
-            st.subheader("Live Board")
+            # st.subheader("Live Board")
             if steps:
                 render_board(steps[-1], display_n)
                 st.space("small")
@@ -136,7 +144,7 @@ def render_layout():
                  render_board(None, n)
                 
         with placeholder_tree.container():
-            st.subheader("Recursion Tree")
+            # st.subheader("Recursion Tree")
             solution_data = st.session_state.get('solution_data')
             tree_data = solution_data.get('tree', {}) if solution_data else {}
             # If we have tree data, use the N that generated it
@@ -160,7 +168,7 @@ def render_layout():
         
         # 1. Board
         with placeholder_board.container():
-            st.subheader("Live Board")
+            # st.subheader("Live Board")
             if steps:
                 idx = st.session_state.get('current_step', 0)
                 
@@ -183,7 +191,7 @@ def render_layout():
                 
         # 2. Tree
         with placeholder_tree.container():
-            st.subheader("Recursion Tree")
+            # st.subheader("Recursion Tree")
             solution_data = st.session_state.get('solution_data')
             tree_data = solution_data.get('tree', {}) if solution_data else {}
             tree_n = st.session_state.get('result_n', n) if tree_data else n

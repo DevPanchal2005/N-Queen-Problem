@@ -1,14 +1,15 @@
 
 # Colors (Chess.com Green Theme)
-COLOR_BOARD_LIGHT = "#f1dcc1"   # aged maple (less yellow)
-COLOR_BOARD_DARK  = "#a4754a"   # worn walnut (less orange)
+# Chess.com default board colors
+COLOR_BOARD_LIGHT = "#eeeed2"  # light square (beige)
+COLOR_BOARD_DARK  = "#769656"  # dark square (green)
 
 
+# Highlights (Chess.com–accurate)
+COLOR_HIGHLIGHT_PLACED = "#a7c7e7"     # Blue – placed / last move
+COLOR_HIGHLIGHT_INVALID = "#ff4b4b"   # Red – invalid / attacked
+COLOR_HIGHLIGHT_BACKTRACK = "#f2d675" # Muted amber – backtracking
 
-# Highlights
-COLOR_HIGHLIGHT_PLACED = "#baca44" # Selected/Placed (Yellow-Greenish)
-COLOR_HIGHLIGHT_INVALID = "#ff4b4b" # Red for invalid/attacked
-COLOR_HIGHLIGHT_BACKTRACK = "#fff44f" # Yellow for backtracking
 
 # Text/UI
 COLOR_TEXT_PRIMARY = "#333333"

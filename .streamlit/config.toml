@@ -1,8 +1,17 @@
 [theme]
 base = "dark"
 
-primaryColor = "#B87333"            # muted bronze / warm iron
-backgroundColor = "#171717"         # warm charcoal
-secondaryBackgroundColor = "#0F0F0F"
-textColor = "#EDEDED"
-font = "sans serif"
+# Page background (neutral, not green)
+backgroundColor = "#1e1e1e"
+
+# Panels, sidebar, containers
+secondaryBackgroundColor = "#262626"
+
+# Accent color (buttons, sliders, toggles)
+primaryColor = "#769656"   # chess.com board dark square
+
+# Text
+textColor = "#e6e6e6"
+
+# Font
+font = "Inter"

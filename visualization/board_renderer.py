@@ -19,19 +19,17 @@ def render_board(state=None, n=8, max_size=520, key_suffix=""):
     board_css = """
     <style>
         .board-frame {
-            padding: 10px;
-            background: #2a1a0f;
-            border-radius: 12px;
+            padding: 6px;                 /* slight breathing space */
+            background: #2b3a2b;          /* neutral dark backdrop */
+            border-radius: 6px;
             aspect-ratio: 1 / 1;
             width: 100%;
             max-width: var(--board-size);
             margin: 0 auto;
             overflow: hidden;
             box-sizing: border-box;
-            box-shadow:
-                inset 0 0 0 2px #5c3a21,
-                0 12px 30px rgba(0,0,0,0.6);
         }
+
 
         .chessboard {
             display: grid;
@@ -53,8 +51,9 @@ def render_board(state=None, n=8, max_size=520, key_suffix=""):
         .queen {
             font-size: clamp(0.9rem, 4vw, 2.4rem);
             line-height: 1;
-            color: #2a1a0f;
+            color: #1f1f1f;   /* chess.com-like piece tone */
         }
+
     </style>
     """
 

@@ -26,7 +26,6 @@ def render_sidebar():
         # st.header("N-Queen Visualizer")
         
         # 1. Config
-        # st.subheader("Configuration")
         
         # Retrieve state for controls
         is_running = st.session_state.get('is_running', False)
@@ -131,12 +130,10 @@ def render_sidebar():
         if reset_btn:
             st.session_state['is_running'] = False
             reset_state()
-            st.rerun()
-            
-        st.divider()
+            st.rerun()  
         
         # 2. Results
-        st.subheader("Live Metrics")
+        st.header("Live Metrics")
         
         # We will use st.empty() containers to update these later from the main loop
         result_col1, result_col2 = st.columns(2)
